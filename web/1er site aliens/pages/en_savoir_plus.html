@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En_savoir_plus</title>
+    <link href="/style.css" rel="stylesheet"/>
+    <link href="/formulaire_contact.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="/assets/uranus_7105652.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>En savoir plus</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Page d'accueil</a></li>
+            <li><a href="/pages/planetes_inexplorees.html">Planètes inexplorées</a></li>
+            <li><a href="/pages/portail_interdimensionnel.html">Portail interdimensionnel</a></li>
+            <li><a href="/pages/aliens.html">Aliens</a></li>
+            <li><form class="searchbar"><input type="text" placeholder="Rechercher">
+                <button type="submit"><i class="fa fa-search"></i></button></form></li>
+            </ul>
+        </nav>
+        <p>Une question ? Des complots à soumettre ? Contacte Momo et raconte-lui tes histoires les plus croustillantes via le formulaire ci-dessous !</p>
+            <form class="formular" name="contact" action="" method="get">
+                <input type="text" name="name" placeholder="Nom" required="">
+                <input type="text" name="prenom" placeholder="Prénom" required="">
+                <input type="text" name="email" placeholder="Adresse e-mail" required="">
+                <textarea name="message" rows="10" placeholder="Message"></textarea>
+                <div class="rgpd">
+                    <input id="rgpd" type="checkbox" required="">
+                    <label for="rgpd">
+                        En soumettant ce formulaire, j'accepte que mes données soient consignées dans le tableur excel de Morgan qui adore réunir tout un tas de données qui ne lui servent à rien juste pour le plaisir de les avoir et éventuellement de les revendre plus tard.
+                    </label>
+                </div>
+                <input type="submit" value="Envoyer !">
+            </form>    
+    </body>
+    </html>

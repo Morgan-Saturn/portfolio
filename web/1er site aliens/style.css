@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(23, 23, 102);
+    color: rgb(208, 211, 211);
+    font-family: "Brushnova";
+    font-size: 24pt;
+    padding-left: 15em;
+}
+ nav {
+    position: fixed;
+    top: 2em;
+    left: 1em;
+    width: 12em;
+}
+li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(28, 177, 144);
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-left: 1em solid rgb(241, 240, 237);
+}
+a{
+    color: rgb(208, 211, 211);
+    text-decoration: none;
+}
+a:hover{
+    color: #dbe734;
+    text-decoration: underline;
+}
+a:active{
+    color: #8b3800;
+}
+@font-face {
+    font-family: "Brushnova";
+    src: 
+        local("Brushnova"),
+        url('assets/Brushnova\ -\ Personal\ Use.otf') format("opentype");
+}
+.blogtext{
+    width: 75%;
+}
+p {
+    text-align: justify;
+}
+address{ 
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted
+}
+h1 img {
+    height: 60px;
+    width: 60px;
+}
+.centered-img{
+    text-align: center;
+}
+button:hover{
+    color:#8b3800;
+    cursor: pointer;
+}
+.searchbar input {
+    padding: 4px 10px;
+    border: 0;
+    border-radius: 10px;
+    background: rgba(187, 255, 240, 0.5);
+    font-family: "Brushnova";
+    font-size: 18pt;
+    max-width: 70%;
+  }

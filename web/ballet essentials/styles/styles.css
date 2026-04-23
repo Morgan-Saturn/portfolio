@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: #bae9ba;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Chalkduster, fantasy;
+}
+h1 {
+    text-align: center;
+    background-color: #63eb63;
+    font-family: Chalkduster, fantasy;
+    font-size: 32pt;
+    margin: 0;
+    padding: 25px;
+}
+.main {
+    position: sticky;
+    top :0;
+    z-index: 1;
+    width: 100%;
+}
+.main ul {
+    font-family: Chalkduster, fantasy;
+    font-size: 18pt;
+    list-style-type: none;
+    display: flex;
+    background-color:  #80ff80;
+    justify-content: space-around;
+    margin: 0;
+}
+.main li {
+    display: flex;
+}
+.main a {
+    color: rgb(96, 84, 84);
+    text-decoration: none;
+    padding: 25px;
+}
+.main a:hover{
+    background-color:#63eb63;
+    color:brown;
+}
+.main a:active{
+    color:white;
+}
+#hamburger{
+    font-size: 36pt;
+    position: absolute;
+    right: 20px;
+    color: rgb(96, 84, 84);
+    padding: 5px;
+    background-color: #63eb63;
+    border-radius: 9px;
+    z-index: 1;
+}
+.index{
+    font-size: 24pt;
+    color: rgb(96, 84, 84);
+    margin: 30px;
+    text-align: justify;
+}
+.tinier{
+    font-size: 18pt;
+    color: rgb(96, 84, 84);
+    margin: 30px;
+    text-align: justify;
+}
+@font-face {
+  font-family: "Chalkduster";
+  src:
+    local("Chalkduster"),
+    url('../assets/font/Chalkduster.ttf')  format('truetype');
+}
+@media screen and (max-width:1050px){
+    .main.hidden {
+        visibility: hidden;
+    }
+    .main {
+        position: fixed;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    .main ul{
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+    }
+    #hamburger{
+        cursor: pointer;
+        position: fixed;
+        bottom: 30px;
+    }
+}
+@media screen and (min-width:1050px){
+     #hamburger{
+        display: none;
+    }
+    
+}

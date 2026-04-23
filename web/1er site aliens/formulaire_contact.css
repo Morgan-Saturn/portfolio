@@ -1,0 +1,37 @@
+
+.formular {
+    margin: auto;
+    width: 67%;
+}
+.formular input[type=text]{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.formular label {
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
+}
+.formular input[type=text], .formular textarea {
+  font-family: "Brushnova";
+  font-size: 18pt;
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid #16c5b7;
+}
+.formular textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+  margin: 10px;
+  border-radius: 10px;
+}
+.rgpd{
+    display: flex;
+    align-items: center;
+}
+.formular input[type=submit]{
+    cursor: pointer;
+}

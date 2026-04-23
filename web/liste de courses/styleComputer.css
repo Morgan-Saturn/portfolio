@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Send Flowers";
+    font-size: 20pt;
+}
+body{
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+}
+.upper{
+    display: flex;
+    gap: 15px;
+}
+#ajout{
+    height: 40px;
+    width: 65%;
+    outline: none;
+    background: transparent;
+}
+label{
+    cursor: pointer;
+}
+.container{
+    margin: 30px;
+    background-image: url(./assets/brouillon.png);
+    width: 45%;
+    height: calc(100vh - 60px);
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding-left: 175px;
+    padding-top: 89px;
+    padding-right: 145px;
+    overflow: auto;
+}
+.container .rest i{
+    float: right; 
+    margin-top: 7px;
+}
+.rest{
+    height: 37px;
+}
+i{
+    cursor: pointer;
+    color: brown;
+}
+#plus{
+    color: black;
+}
+#plus:hover{
+    color: brown;
+}
+input{
+    cursor: pointer;
+}
+input[type="number"]{
+    width: 85px;
+    height: 35px;
+    background: transparent;
+    appearance: textfield;
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 9px;
+}
+.row label{
+    flex-grow: 5;
+}
+.compteur{
+    display: flex;
+    justify-content: flex-end;
+}

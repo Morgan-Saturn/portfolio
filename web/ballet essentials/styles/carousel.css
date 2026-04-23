@@ -1,0 +1,33 @@
+.carrousel{
+    position: relative;
+    width: 85%;
+    height: 722px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 40px;
+}
+.images{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.images img{
+    
+    height: 100%;
+}
+.carrousel > img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.carrousel > .next{
+    right: 0;
+}
+.carrousel > .prev{
+    rotate: 90deg;
+}
+.carrousel > .next{
+    rotate: -90deg;
+}
