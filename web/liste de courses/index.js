@@ -62,5 +62,9 @@ function decrease_number(event){
     let parent = button.parentElement;
     let counter = parent.querySelector('input[type="number"]');
 
-    counter.value = counter.value - 1
+    if (counter.value <= 1) {
+        return
+    } else{
+        counter.value = counter.value - 1
+    }
 }
