@@ -45,6 +45,9 @@ i{
     cursor: pointer;
     color: brown;
 }
+i:hover{
+    transform: scale(1.2);
+}
 #plus{
     color: black;
 }
@@ -56,10 +59,12 @@ input{
 }
 input[type="number"]{
     width: 85px;
-    height: 35px;
+    height: 30px;
+    outline: none;
     background: transparent;
     appearance: textfield;
     text-align: center;
+    border: none;
 }
 .row{
     display: flex;
@@ -72,4 +77,22 @@ input[type="number"]{
 .compteur{
     display: flex;
     justify-content: flex-end;
+    background-color: rgba(163, 182, 176, 0.7);
+    border: solid 2px rgb(105, 105, 105);
+    border-radius: 15px;
+    height: 35px;
+
+}
+.decrement, .increment{
+    font-weight: bolder;
+    font-size: 20pt;
+    color: brown;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+}
+.decrement:hover, .increment:hover{
+    background-color: rgba(110, 128, 129, 0.7);
+    cursor: pointer;
+    border-radius: 15px;
 }
