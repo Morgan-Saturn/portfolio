@@ -1,0 +1,63 @@
+*{
+    font-size: 42pt;
+}
+.calculator{
+    margin: 30px auto;
+    border: 2px solid green;
+    width: fit-content;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: lightgray;
+    height: 550px;
+    width: 450px;
+}
+.container {
+    display: grid; 
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* = repeat(4, 1fr);*/
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . eq"
+    ". . . eq"
+    ". . . eq"; /* = grid-row: span3 au niveau de la classe dédiée au = */
+}
+button{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    background-color: darkgray;
+}
+button.cancel{
+    background-color: brown;
+}
+button.cancel:hover{
+    background-color: darkgray;
+}
+button.blue{
+    background-color: blue;
+}
+button.blue:hover{
+    background-color: darkgray;
+}
+button.green{
+    background-color: green;
+    grid-area: eq;
+
+}
+button.green:hover{
+    background-color: darkgray;
+}
+input[type="text"]{
+    border: 2px solid green;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

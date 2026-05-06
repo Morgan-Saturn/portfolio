@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet"/>
+    <title>Pronote du pauvre</title>
+</head>
+<body>
+    <h1>Prof 2000</h1>
+    <div class="container">
+    <div class="inputs">
+        <h2>Ajouter une note :</h2>
+        <div class="labelbox">
+            <label>Elève</label>
+            <input type="text" required id="nom"/>
+        </div>
+        <div class="labelbox">
+            <label>Note</label>
+            <input type="text" required id="note"/>
+        </div>
+        <button>Ajouter</button>
+    </div>
+    <div class="tableau-result">
+        <table>
+            <thead>
+                <tr>
+                    <th>Elève</th>
+                    <th>Note (/20)</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+        <h2>Moyenne de la classe :</h2>
+        <span id="1"></span>
+        <h2>Variance :</h2>
+        <span id="2"></span>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

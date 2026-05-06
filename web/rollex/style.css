@@ -1,0 +1,77 @@
+body{
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25pt;
+}
+.clock{
+    background-color: rgb(228, 235, 202);
+    border-radius: 190px; /*border-radius : 50%;*/
+    width: 390px;
+    height: 390px;
+    margin-left: 978px;
+    margin-top: 245px;
+}
+.vertical{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 290px;
+    margin-left: 185px;
+}
+.horizontal{
+    margin-top: -200px;
+    display: flex;
+    justify-content: space-around;
+    gap: 290px;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 175px;
+    margin-top: 45px;
+    position: absolute;
+}
+.center{
+    background-color: rgb(25, 107, 4);
+    border-radius: 190px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-left: 183px;
+    margin-top: -30px;
+    z-index: 5;
+}
+.heure{
+    width: 10px;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 50% 50% 0 0; /*pour n'appliquer cet effet que sur une extrémité de l'aiguille et non les deux, border-radius: 50% 50% pour en faire une flèche, puis 0 0; pour que ça ne s'applique pas aux 4 côtés du rectangle mais seulement à deux*/
+    position: absolute;
+    margin-left: 193px;
+    margin-top: -115px;
+    z-index: 1;
+    transform-origin: bottom;
+}
+.minute{
+    width: 10px;
+    height: 135px;
+    background-color: rgb(40, 105, 81);
+    border-radius: 50% 50% 0 0; 
+    position: absolute;
+    margin-left: 193px; /*pour déplacer les aiguilles par rapport au centre, utiliser transform: rotate(30deg par ex)*/
+    margin-top: -150px;
+    z-index: 2; 
+    transform-origin: bottom;
+}
+.seconde{
+    width: 5px;
+    height: 150px;
+    background-color: rgb(105, 40, 40);
+    border-radius: 50% 50% 0 0; 
+    position: absolute;
+    margin-left: 195px;
+    margin-top: -165px;
+    z-index: 3;
+    transform-origin: bottom;
+}

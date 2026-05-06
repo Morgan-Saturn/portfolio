@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flow-root;
+}
+.container{
+    background-color: blue;
+    width: 45%;
+    height: 25%;
+    margin: auto;
+    margin-top: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+}
+.rectangle{
+    background-color: whitesmoke;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.8s;
+}
+.interrupteurOff{
+    background-color: rgb(0, 204, 255);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 1px;
+    transition: 0.8s;
+}
+.interrupteurOn{
+    background-color: rgb(0, 204, 255);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 49px;
+    transition: 0.8s;
+}
+.rectangleOn{
+    background-color: rgb(67, 68, 75);
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.8s;
+}
+.containerOn{
+    background-color: rgb(0, 0, 0);
+    width: 45%;
+    height: 25%;
+    margin: auto;
+    margin-top: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+}
+
+/* autre option pour animer l'interrupteur directement dans le css via @keyframes toggleOn{
+0%{ transform: translateX(0);}
+100%{ transform: translateX(40px);}
+} puis pour toggleOff écrire la même chose mais en inversant les valeurs du translateX.
+ 
+.input:checked + .label .circle{ animation: toggleOn 0.4s linear forwards; } etc*/

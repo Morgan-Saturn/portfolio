@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    font-family: "Knewave";
+    margin: 0;
+}
+body{
+    text-align: center;
+    background-color: darkorchid;
+    color: white;
+}
+h3{
+    font-size: 48pt;
+    margin-top: 20vh;
+}
+h1{
+    font-size: 68pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.countdown{
+    background-color: rgb(93, 50, 114);
+    font-size: 38pt;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 45px;        /*could've used ::before to create the labels and style them each one by one*/
+}
+.calendar{
+    background-color: rgb(93, 50, 114);
+    font-size: 38pt;
+    display: flex;
+    justify-content: space-around;
+}

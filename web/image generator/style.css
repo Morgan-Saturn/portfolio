@@ -1,0 +1,108 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    box-sizing: border-box;
+    color:#FFF;
+}
+body{
+    background: linear-gradient(blue, green);
+    height: 100vh;
+    display: flow-root;
+}
+.container{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: 35%;
+    height: 550px;
+    margin-top: 185px;
+    background-color: rgb(30, 46, 42);
+    border-radius: 25px;
+    box-shadow: 10px 1px 20px 15px rgb(159, 160, 103);
+}
+.circle{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+    transform: scale(1.5);
+    position: relative;
+    z-index: 0;
+}
+button::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #353f46;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+/*effet de brillance before*/
+button::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    left: -2px;
+    top: -2px;
+    filter: blur(8px);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: opacity 0.3 ease-in-out;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+@keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+button:hover::before{
+    opacity: 1;
+}
+button:active:after{
+    background: transparent;
+}
+button:active{
+    color: black;
+    font-weight: bold;
+}
+button:disabled{
+    cursor: not-allowed;
+}
+h1{
+    margin: 25px;
+}
+.circle img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 25px;
+    border: 5px solid green;
+}
+h3{
+    background-color: #48FF00;
+    border-radius: 15px;
+    margin-top: 25px;
+}
