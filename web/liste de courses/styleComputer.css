@@ -22,25 +22,12 @@ body{
 label{
     cursor: pointer;
 }
-.container{
-    margin: 30px;
-    background-image: url(./assets/brouillon.png);
-    width: 45%;
-    height: calc(100vh - 60px);
-    background-repeat: repeat-y;
-    background-size: cover;
-    padding-left: 175px;
-    padding-top: 89px;
-    padding-right: 145px;
-    overflow: auto;
-}
+
 .container .rest i{
     float: right; 
     margin-top: 7px;
 }
-.rest{
-    height: 37px;
-}
+
 i{
     cursor: pointer;
     color: brown;
@@ -97,8 +84,26 @@ input[type="number"]{
     border-radius: 15px;
 }
 
+@media (min-width: 800px) {
+    .container{
+        margin: 30px;
+        background-image: url(./assets/brouillon.png);
+        width: 45%;
+        height: calc(100vh - 60px);
+        background-repeat: repeat-y;
+        background-size: cover;
+        padding-left: 175px;
+        padding-top: 89px;
+        padding-right: 145px;
+        overflow: auto;
+    }
+    .rest{
+        height: 37px;
+    }
+    
+}
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     body{
         background-color: darkgoldenrod;
         display: flex;
