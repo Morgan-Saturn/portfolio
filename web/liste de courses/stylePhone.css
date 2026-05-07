@@ -8,6 +8,7 @@ body{
     background-color: darkgoldenrod;
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 .upper{
     display: flex;
@@ -23,15 +24,11 @@ label{
     cursor: pointer;
 }
 .container{
-    margin: 30px;
     background-image: url(./assets/brouillon.png);
-    width: 45%;
-    height: calc(100vh - 60px);
-    background-repeat: repeat-y;
     background-size: cover;
-    padding-left: 175px;
-    padding-top: 89px;
-    padding-right: 145px;
+    background-position-x: -2.6rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
     overflow: auto;
 }
 .container .rest i{
@@ -39,7 +36,7 @@ label{
     margin-top: 7px;
 }
 .rest{
-    height: 37px;
+    height: 1.95rem;
 }
 i{
     cursor: pointer;
@@ -95,25 +92,4 @@ input[type="number"]{
     background-color: rgba(110, 128, 129, 0.7);
     cursor: pointer;
     border-radius: 15px;
-}
-
-
-@media (max-width: 400px) {
-    body{
-        background-color: darkgoldenrod;
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-    }
-    .container{
-        background-image: url(./assets/brouillon.png);
-        background-size: cover;
-        background-position-x: -2.6rem;
-        padding-left: 2rem;
-        padding-top: 2rem;
-        overflow: auto;
-    }
-    .rest{
-        height: 1.95rem;
-    }
 }
